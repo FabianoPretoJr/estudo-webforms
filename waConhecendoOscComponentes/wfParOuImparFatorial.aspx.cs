@@ -41,7 +41,17 @@ namespace waConhecendoOscComponentes
 
         protected void btnCalcular_Click(object sender, EventArgs e)
         {
-            // montar o fatorial sozinho
+            int f = Convert.ToInt32(txtValorPn2.Text);
+            int total = 1;
+            if (f == 0) LResp2.Text = total.ToString();
+            else
+            {
+                for (int i = f; i > 1; i--)
+                {
+                    total = total * i;
+                }
+                LResp2.Text = total.ToString();
+            }
         }
     }
 }

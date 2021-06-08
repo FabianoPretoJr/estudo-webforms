@@ -10,7 +10,7 @@
     <form id="form1" runat="server">
         <div>
             <asp:BulletedList ID="blLista" runat="server" BulletStyle="Square" Width="1200px" DisplayMode="LinkButton" OnClick="blLista_Click">
-                <asp:ListItem>par ou Impar</asp:ListItem>
+                <asp:ListItem>Par ou Impar</asp:ListItem>
                 <asp:ListItem>Calcula o Fatorial</asp:ListItem>
             </asp:BulletedList>
             <br />
