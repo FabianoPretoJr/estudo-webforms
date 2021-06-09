@@ -13,6 +13,11 @@
                 <asp:ListItem>par ou Impar</asp:ListItem>
                 <asp:ListItem>Calcula o Fatorial</asp:ListItem>
             </asp:BulletedList>
+            <asp:RadioButtonList ID="RadioButtonList1" runat="server" Width="157px">
+                <asp:ListItem>Par ou Impar</asp:ListItem>
+                <asp:ListItem>Calcula o Fatorial</asp:ListItem>
+            </asp:RadioButtonList>
+            <br />
             <br />
             <asp:Panel ID="pnParOuImpar" runat="server" Width="1200px" Visible="False">
                 <asp:Label ID="Label1" runat="server" Text="Verifica se o número é par ou impar"></asp:Label>
