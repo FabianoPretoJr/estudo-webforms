@@ -23,5 +23,10 @@ namespace waConhecendoOscComponentes
         {
             MultiView1.ActiveViewIndex = 2;
         }
+
+        protected void LinkButton1_Click(object sender, EventArgs e)
+        {
+            MultiView1.ActiveViewIndex = 0;
+        }
     }
 }

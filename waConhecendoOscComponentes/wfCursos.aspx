@@ -18,11 +18,29 @@
                     <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Size="Larger" Text="JavaScript"></asp:Label>
                     <br />
                     <asp:Label ID="Label2" runat="server" Text="Linguagem de desenvolvimento web que roda diretamente no navegador do cliente."></asp:Label>
+                    <br />
+                    <br />
+                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" Target="_blank">Documentação</asp:HyperLink>
+                    <br />
+                    <br />
+                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="https://pt.stackoverflow.com/" Target="_blank">Na dúvida acesse</asp:HyperLink>
+                    <br />
+                    <br />
+                    <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">Voltar</asp:LinkButton>
                 </asp:View>
                 <asp:View ID="View3" runat="server">
                     <asp:Label ID="Label3" runat="server" Font-Bold="True" Font-Size="Larger" Text=".Net Core"></asp:Label>
                     <br />
                     <asp:Label ID="Label4" runat="server" Text="Linguagem de desenvolvimento de softwares multiplataforma da Microsoft."></asp:Label>
+                    <br />
+                    <br />
+                    <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="https://docs.microsoft.com/pt-br/aspnet/core/?view=aspnetcore-5.0" Target="_blank">Documentação</asp:HyperLink>
+                    <br />
+                    <br />
+                    <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="https://pt.stackoverflow.com/" Target="_blank">Na dúvida acesse</asp:HyperLink>
+                    <br />
+                    <br />
+                    <asp:LinkButton ID="LinkButton2" runat="server" OnClick="LinkButton1_Click">Voltar</asp:LinkButton>
                 </asp:View>
             </asp:MultiView>
         </div>
