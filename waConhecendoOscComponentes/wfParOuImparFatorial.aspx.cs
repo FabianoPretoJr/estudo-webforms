@@ -43,15 +43,27 @@ namespace waConhecendoOscComponentes
         {
             int f = Convert.ToInt32(txtValorPn2.Text);
             int total = 1;
-            if (f == 0) LResp2.Text = total.ToString();
-            else
+            if (f == 0) 
+                LResp2.Text = $"{f}! = {total}";
+            else if (f > 0)
             {
-                for (int i = f; i > 1; i--)
-                {
-                    total = total * i;
-                }
-                LResp2.Text = total.ToString();
+                for (int i = f; i > 1; i--) 
+                    total *= i;
+                LResp2.Text = $"{f}! = {total}";
             }
+            else
+                LResp2.Text = "Informe apenas números positivos";
+        }
+
+        protected void RadioButtonList1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            pnParOuImpar.Visible = false;
+            pnFatorial.Visible = false;
+
+            if (RadioButtonList1.SelectedIndex == 0)
+                pnParOuImpar.Visible = true;
+            else
+                pnFatorial.Visible = true;
         }
     }
 }

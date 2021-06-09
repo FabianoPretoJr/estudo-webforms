@@ -9,11 +9,11 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:BulletedList ID="blLista" runat="server" BulletStyle="Square" Width="1200px" DisplayMode="LinkButton" OnClick="blLista_Click">
+            <asp:BulletedList ID="blLista" runat="server" BulletStyle="Square" Width="1200px" DisplayMode="LinkButton" OnClick="blLista_Click" Visible="False">
                 <asp:ListItem>Par ou Impar</asp:ListItem>
                 <asp:ListItem>Calcula o Fatorial</asp:ListItem>
             </asp:BulletedList>
-            <asp:RadioButtonList ID="RadioButtonList1" runat="server" Width="157px">
+            <asp:RadioButtonList ID="RadioButtonList1" runat="server" Width="157px" AutoPostBack="True" OnSelectedIndexChanged="RadioButtonList1_SelectedIndexChanged">
                 <asp:ListItem>Par ou Impar</asp:ListItem>
                 <asp:ListItem>Calcula o Fatorial</asp:ListItem>
             </asp:RadioButtonList>

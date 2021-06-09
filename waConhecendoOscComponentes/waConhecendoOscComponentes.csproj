@@ -67,8 +67,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Imagens\Curso1.png" />
+    <Content Include="Imagens\Curso2.png" />
     <Content Include="Web.config" />
     <Content Include="wfComponentes1.aspx" />
+    <Content Include="wfCursos.aspx" />
     <Content Include="wfDiasDeVida.aspx" />
     <Content Include="wfParOuImparFatorial.aspx" />
     <Content Include="wftabuada.aspx" />
@@ -81,6 +84,13 @@
     </Compile>
     <Compile Include="wfComponentes1.aspx.designer.cs">
       <DependentUpon>wfComponentes1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wfCursos.aspx.cs">
+      <DependentUpon>wfCursos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wfCursos.aspx.designer.cs">
+      <DependentUpon>wfCursos.aspx</DependentUpon>
     </Compile>
     <Compile Include="wfDiasDeVida.aspx.cs">
       <DependentUpon>wfDiasDeVida.aspx</DependentUpon>
@@ -113,6 +123,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
