@@ -8,6 +8,14 @@
 </head>
 <body>
     <form id="form1" runat="server">
+        <div>            
+            <asp:AdRotator ID="AdRotator1" runat="server" AdvertisementFile="~/propaganda.xml" Height="60px" Target="_blank" Width="60px" />
+            <br />
+            <br />
+            <asp:Literal ID="Literal1" runat="server" Text="&lt;b&gt;Eu posso colocar qualquer coisa aqui dentro de HTML ou JS e ele interpreta literalmente o seu conteúdo&lt;/b&gt;"></asp:Literal>
+            <br />
+            <br />
+        </div>
         <div>
             <asp:MultiView ID="MultiView1" runat="server" ActiveViewIndex="0">
                 <asp:View ID="View1" runat="server">

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+	<Ad>
+		<ImageUrl>~/Imagens/propaganda1.jpg</ImageUrl>
+		<height>60</height>
+		<width>360</width>
+		<NavigateUrl>https://www.dell.com/pt-br?~ck=mn</NavigateUrl>
+		<AlternateText>Dell</AlternateText>
+		<Impressions>80</Impressions>
+	</Ad>
+	<Ad>
+		<ImageUrl>~/Imagens/propaganda2.jpg</ImageUrl>
+		<height>60</height>
+		<width>60</width>
+		<NavigateUrl>https://www.apple.com/br</NavigateUrl>
+		<AlternateText>Apple</AlternateText>
+		<Impressions>80</Impressions>
+	</Ad>
+</Advertisements>

@@ -67,14 +67,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Imagens\banner.png" />
     <Content Include="Imagens\Curso1.png" />
     <Content Include="Imagens\Curso2.png" />
+    <Content Include="Imagens\propaganda1.jpg" />
+    <Content Include="Imagens\propaganda2.jpg" />
     <Content Include="Web.config" />
     <Content Include="wfComponentes1.aspx" />
     <Content Include="wfCursos.aspx" />
     <Content Include="wfDiasDeVida.aspx" />
     <Content Include="wfParOuImparFatorial.aspx" />
+    <Content Include="wfSitesParceiros.aspx" />
     <Content Include="wftabuada.aspx" />
+    <Content Include="propaganda.xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -105,6 +110,13 @@
     </Compile>
     <Compile Include="wfParOuImparFatorial.aspx.designer.cs">
       <DependentUpon>wfParOuImparFatorial.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wfSitesParceiros.aspx.cs">
+      <DependentUpon>wfSitesParceiros.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wfSitesParceiros.aspx.designer.cs">
+      <DependentUpon>wfSitesParceiros.aspx</DependentUpon>
     </Compile>
     <Compile Include="wftabuada.aspx.cs">
       <DependentUpon>wftabuada.aspx</DependentUpon>
