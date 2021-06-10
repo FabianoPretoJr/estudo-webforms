@@ -35,7 +35,11 @@
                 <asp:Button ID="btnCalcular" runat="server" Text="Calcular" OnClick="btnCalcular_Click" />
                 <br />
                 <asp:Label ID="LResp2" runat="server"></asp:Label>
+                <br />
             </asp:Panel>
+            <br />
+            <br />
+                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/index.aspx">Voltar para Home</asp:HyperLink>
         </div>
     </form>
 </body>

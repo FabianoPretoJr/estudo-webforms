@@ -51,6 +51,9 @@
                     <asp:LinkButton ID="LinkButton2" runat="server" OnClick="LinkButton1_Click">Voltar</asp:LinkButton>
                 </asp:View>
             </asp:MultiView>
+            <br />
+            <br />
+            <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/index.aspx">Voltar para Home</asp:HyperLink>
         </div>
     </form>
 </body>

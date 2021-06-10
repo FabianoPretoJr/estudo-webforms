@@ -97,6 +97,9 @@
             </asp:Table>
             <br />
             <asp:PlaceHolder ID="PlaceHolder" runat="server"></asp:PlaceHolder>
+            <br />
+            <br />
+            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/index.aspx">Voltar para Home</asp:HyperLink>
         </div>
     </form>
 </body>

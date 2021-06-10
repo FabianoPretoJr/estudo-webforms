@@ -27,8 +27,13 @@
             <asp:HyperLink ID="HyperLink2" runat="server" onClick="DecText()">-----</asp:HyperLink>
             <br />
         </div>
-    </form>
     <p id="p1">Exemplo de como alterar o tamanho da fonte de um páragrafo</p>
     <p id="p2">Visite o meu GitHub: <a href="https://github.com/FabianoPretoJr" target="_blank">Fabiano Preto Junior</a></p>
-</body>
+        <p>
+            &nbsp;</p>
+        <p>
+            <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/index.aspx">Voltar para Home</asp:HyperLink>
+        </p>
+    </form>
+    </body>
 </html>

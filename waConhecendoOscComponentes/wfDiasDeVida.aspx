@@ -9,6 +9,9 @@
         .auto-style1 {
             width: 400px;
         }
+        .auto-style2 {
+            width: 431px;
+        }
     </style>
 </head>
 <body>
@@ -22,7 +25,7 @@
                     <td class="auto-style1">
                         <asp:Label ID="Label2" runat="server" Text="Data atual"></asp:Label>
                     </td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style2">&nbsp;</td>
                 </tr>
                 <tr>
                     <td class="auto-style1">
@@ -47,7 +50,7 @@
                             <TodayDayStyle BackColor="#FFCC66" ForeColor="White" />
                         </asp:Calendar>
                     </td>
-                    <td>
+                    <td class="auto-style2">
                         <asp:Button ID="btnCalcular" runat="server" OnClick="btnCalcular_Click" Text="Calcular dias de vida" />
                         <br />
                         <asp:Label ID="lbResultado" runat="server" Text="Dias de vida:"></asp:Label>
@@ -56,9 +59,11 @@
                 <tr>
                     <td class="auto-style1">&nbsp;</td>
                     <td class="auto-style1">&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style2">&nbsp;</td>
                 </tr>
             </table>
+            <br />
+            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/index.aspx">Voltar para Home</asp:HyperLink>
         </div>
     </form>
 </body>
