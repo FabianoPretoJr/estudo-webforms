@@ -1,5 +1,7 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="wftabuada.aspx.cs" Inherits="waConhecendoOscComponentes.wftabuada" %>
 
+<%@ Register src="wucMenu.ascx" tagname="wucMenu" tagprefix="uc1" %>
+
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -7,8 +9,9 @@
     <title></title>
 </head>
 <body>
-    <h1>Tabuada</h1>
     <form id="form1" runat="server">
+        <uc1:wucMenu ID="wucMenu1" runat="server" />
+        <h1>Tabuada</h1>
         <div>
             <asp:DropDownList ID="dlNumeros" runat="server" Width="121px">
             </asp:DropDownList>

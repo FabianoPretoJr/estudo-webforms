@@ -1,5 +1,7 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="wfCursos.aspx.cs" Inherits="waConhecendoOscComponentes.wfCursos" %>
 
+<%@ Register src="wucMenu.ascx" tagname="wucMenu" tagprefix="uc1" %>
+
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -9,6 +11,7 @@
 <body>
     <form id="form1" runat="server">
         <div>            
+            <uc1:wucMenu ID="wucMenu1" runat="server" />
             <asp:AdRotator ID="AdRotator1" runat="server" AdvertisementFile="~/propaganda.xml" Height="60px" Target="_blank" Width="60px" />
             <br />
             <br />
