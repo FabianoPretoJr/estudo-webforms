@@ -67,6 +67,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\Agenda.mdf" />
+    <Content Include="App_Data\Agenda_log.ldf">
+      <DependentUpon>Agenda.mdf</DependentUpon>
+    </Content>
     <Content Include="Exemplo.aspx" />
     <Content Include="Imagens\banner.png" />
     <Content Include="Imagens\Curso1.png" />
@@ -79,6 +83,7 @@
     <Content Include="wfBasicoJavaScript.aspx" />
     <Content Include="wfComponentes1.aspx" />
     <Content Include="wfCursos.aspx" />
+    <Content Include="wfData.aspx" />
     <Content Include="wfDiasDeVida.aspx" />
     <Content Include="wfMenu.aspx" />
     <Content Include="wfParOuImparFatorial.aspx" />
@@ -139,6 +144,13 @@
     </Compile>
     <Compile Include="wfCursos.aspx.designer.cs">
       <DependentUpon>wfCursos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wfData.aspx.cs">
+      <DependentUpon>wfData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wfData.aspx.designer.cs">
+      <DependentUpon>wfData.aspx</DependentUpon>
     </Compile>
     <Compile Include="wfDiasDeVida.aspx.cs">
       <DependentUpon>wfDiasDeVida.aspx</DependentUpon>
