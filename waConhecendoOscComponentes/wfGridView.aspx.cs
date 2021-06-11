@@ -13,5 +13,11 @@ namespace waConhecendoOscComponentes
         {
 
         }
+
+        protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            DetailsView1.Visible = true;
+            DetailsView1.PageIndex = (GridView1.PageIndex * GridView1.PageSize) + GridView1.SelectedIndex;
+        }
     }
 }
