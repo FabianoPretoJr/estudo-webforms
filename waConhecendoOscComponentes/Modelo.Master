@@ -1,0 +1,32 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Modelo.master.cs" Inherits="waConhecendoOscComponentes.Modelo" %>
+
+<%@ Register Src="wucMenu.ascx" TagName="wucMenu" TagPrefix="uc1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <main>
+        <form id="form1" runat="server">
+            <header>
+                <h1>Topo</h1>
+            </header>
+            <menu>
+                <uc1:wucMenu ID="wucMenu1" runat="server" />
+            </menu>
+            <div>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <h1>Rodapé</h1>
+    </footer>
+</body>
+</html>

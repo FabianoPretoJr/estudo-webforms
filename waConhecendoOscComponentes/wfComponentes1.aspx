@@ -1,5 +1,7 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="wfComponentes1.aspx.cs" Inherits="waConhecendoOscComponentes.wfComponentes1" %>
 
+<%@ Register src="wucMenu.ascx" tagname="wucMenu" tagprefix="uc1" %>
+
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -17,6 +19,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
+            <uc1:wucMenu ID="wucMenu1" runat="server" />
             <table style="width:100%;">
                 <tr>
                     <td class="auto-style1">Site</td>

@@ -11,25 +11,16 @@ namespace waConhecendoOscComponentes
 {
 
 
-    public partial class wucMenu
+    public partial class Exemplo
     {
 
         /// <summary>
-        /// Menu1 control.
+        /// Calendar1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Menu Menu1;
-
-        /// <summary>
-        /// Web control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.SiteMapDataSource Web;
+        protected global::System.Web.UI.WebControls.Calendar Calendar1;
     }
 }
