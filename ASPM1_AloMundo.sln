@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Upload", "Upload\Upload.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "waAgenda", "waAgenda\waAgenda.csproj", "{3C7920F7-ECB0-424E-944F-D96012D4064B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASPModulo2", "ASPModulo2\ASPModulo2.csproj", "{32062429-0246-4908-9192-11897842F245}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{3C7920F7-ECB0-424E-944F-D96012D4064B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3C7920F7-ECB0-424E-944F-D96012D4064B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3C7920F7-ECB0-424E-944F-D96012D4064B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32062429-0246-4908-9192-11897842F245}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32062429-0246-4908-9192-11897842F245}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32062429-0246-4908-9192-11897842F245}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32062429-0246-4908-9192-11897842F245}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
