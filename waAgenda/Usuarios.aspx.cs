@@ -18,7 +18,8 @@ namespace waAgenda
         {
             if(e.Exception != null)
             {
-                lblMsg.Text = e.Exception.Message;
+                Response.Write("<script>alert('Inserindo um registro duplicado ou com campos em branco!')</script>");
+                //blMsg.Text = e.Exception.Message;
                 e.ExceptionHandled = true;
             }
         }
@@ -27,7 +28,8 @@ namespace waAgenda
         {
             if (e.Exception != null)
             {
-                lblMsg.Text = e.Exception.Message;
+                Response.Write("<script>alert('Alterando um registro sem informar todos os campos!')</script>");
+                //lblMsg.Text = e.Exception.Message;
                 e.ExceptionHandled = true;
             }
         }

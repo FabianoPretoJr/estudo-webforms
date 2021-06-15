@@ -19,29 +19,39 @@ namespace waAgenda
 
         protected void btnSalvar_Click(object sender, EventArgs e)
         {
-			Configuration rootWebConfig = WebConfigurationManager.OpenWebConfiguration("/MyWebSiteRoot");
-			ConnectionStringSettings connString = rootWebConfig.ConnectionStrings.ConnectionStrings["ConnectionString"];
+            try
+            {
+				if (txtEmail.Text == "" && txtNome.Text == "" && txtTelefone.Text == "")
+					throw new Exception("Campos em branco");
 
-			SqlConnection con = new SqlConnection();
-			con.ConnectionString = connString.ToString();
+				Configuration rootWebConfig = WebConfigurationManager.OpenWebConfiguration("/MyWebSiteRoot");
+				ConnectionStringSettings connString = rootWebConfig.ConnectionStrings.ConnectionStrings["ConnectionString"];
 
-			SqlCommand cmd = new SqlCommand();
-			cmd.Connection = con;
+				SqlConnection con = new SqlConnection();
+				con.ConnectionString = connString.ToString();
 
-			cmd.CommandText = @"INSERT INTO Contato (Nome, Email, Telefone) VALUES (@nome, @email, @telefone)";
-			cmd.Parameters.AddWithValue("@nome", txtNome.Text);
-			cmd.Parameters.AddWithValue("@email", txtEmail.Text);
-			cmd.Parameters.AddWithValue("@telefone", txtTelefone.Text);
+				SqlCommand cmd = new SqlCommand();
+				cmd.Connection = con;
 
-			con.Open();
-			cmd.ExecuteNonQuery();
-			con.Close();
+				cmd.CommandText = @"INSERT INTO Contato (Nome, Email, Telefone) VALUES (@nome, @email, @telefone)";
+				cmd.Parameters.AddWithValue("@nome", txtNome.Text);
+				cmd.Parameters.AddWithValue("@email", txtEmail.Text);
+				cmd.Parameters.AddWithValue("@telefone", txtTelefone.Text);
 
-			GridView1.DataBind();
+				con.Open();
+				cmd.ExecuteNonQuery();
+				con.Close();
 
-			txtNome.Text = "";
-			txtEmail.Text = "";
-			txtTelefone.Text = "";
+				GridView1.DataBind();
+
+				txtNome.Text = "";
+				txtEmail.Text = "";
+				txtTelefone.Text = "";
+			}
+            catch (Exception ex)
+            {
+				Response.Write($"<script>alert('{ex.Message}')</script>");
+            }
 		}
     }
 }
