@@ -68,17 +68,49 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Web.config" />
+    <Content Include="wFormFilmes.aspx" />
     <Content Include="wFormSalarioMinimo.aspx" />
+    <Content Include="wLogin.aspx" />
+    <Content Include="wPrincipal.aspx" />
+    <Content Include="wRespostaFilmes.aspx" />
     <Content Include="wRespostaSalarioMinimo.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="wFormFilmes.aspx.cs">
+      <DependentUpon>wFormFilmes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wFormFilmes.aspx.designer.cs">
+      <DependentUpon>wFormFilmes.aspx</DependentUpon>
+    </Compile>
     <Compile Include="wFormSalarioMinimo.aspx.cs">
       <DependentUpon>wFormSalarioMinimo.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="wFormSalarioMinimo.aspx.designer.cs">
       <DependentUpon>wFormSalarioMinimo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wLogin.aspx.cs">
+      <DependentUpon>wLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wLogin.aspx.designer.cs">
+      <DependentUpon>wLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wPrincipal.aspx.cs">
+      <DependentUpon>wPrincipal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wPrincipal.aspx.designer.cs">
+      <DependentUpon>wPrincipal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wRespostaFilmes.aspx.cs">
+      <DependentUpon>wRespostaFilmes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wRespostaFilmes.aspx.designer.cs">
+      <DependentUpon>wRespostaFilmes.aspx</DependentUpon>
     </Compile>
     <Compile Include="wRespostaSalarioMinimo.aspx.cs">
       <DependentUpon>wRespostaSalarioMinimo.aspx</DependentUpon>
