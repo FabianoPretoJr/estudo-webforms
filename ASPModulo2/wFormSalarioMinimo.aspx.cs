@@ -13,5 +13,12 @@ namespace ASPModulo2
         {
 
         }
+
+        protected void RadioButtonList1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            txtPercentual.Visible = false;
+            if (RadioButtonList1.SelectedIndex == 3)
+                txtPercentual.Visible = true;
+        }
     }
 }

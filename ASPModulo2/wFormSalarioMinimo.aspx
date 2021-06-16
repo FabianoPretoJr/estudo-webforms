@@ -16,12 +16,16 @@
             <br />
             <asp:Label ID="lblPercentual" runat="server" Text="Percentual de Desconto"></asp:Label>
             <br />
-            <asp:RadioButton ID="rdb10" runat="server" GroupName="grupo1" Text="10%" />
-            <asp:RadioButton ID="rdb20" runat="server" GroupName="grupo1" Text="20%" />
-            <asp:RadioButton ID="rdb30" runat="server" GroupName="grupo1" Text="30%" />
+            <asp:RadioButtonList ID="RadioButtonList1" runat="server" AutoPostBack="True" OnSelectedIndexChanged="RadioButtonList1_SelectedIndexChanged" RepeatDirection="Horizontal">
+                <asp:ListItem Selected="True" Value="10">10%</asp:ListItem>
+                <asp:ListItem Value="20">20%</asp:ListItem>
+                <asp:ListItem Value="30">30%</asp:ListItem>
+                <asp:ListItem>Outro</asp:ListItem>
+            </asp:RadioButtonList>
+            <asp:TextBox ID="txtPercentual" runat="server" Visible="False"></asp:TextBox>
             <br />
             <br />
-            <asp:Button ID="btnEnviar" runat="server" Text="Enviar Dados" />
+            <asp:Button ID="btnEnviar" runat="server" Text="Enviar Dados" PostBackUrl="~/wRespostaSalarioMinimo.aspx" />
         </div>
     </form>
 </body>

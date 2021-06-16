@@ -69,6 +69,7 @@
   <ItemGroup>
     <Content Include="Web.config" />
     <Content Include="wFormSalarioMinimo.aspx" />
+    <Content Include="wRespostaSalarioMinimo.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -78,6 +79,13 @@
     </Compile>
     <Compile Include="wFormSalarioMinimo.aspx.designer.cs">
       <DependentUpon>wFormSalarioMinimo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wRespostaSalarioMinimo.aspx.cs">
+      <DependentUpon>wRespostaSalarioMinimo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wRespostaSalarioMinimo.aspx.designer.cs">
+      <DependentUpon>wRespostaSalarioMinimo.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
