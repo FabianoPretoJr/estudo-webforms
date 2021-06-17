@@ -23,6 +23,12 @@
             <asp:TextBox ID="txtContador" runat="server"></asp:TextBox>
             <asp:Button ID="btnContador" runat="server" OnClick="btnContador_Click" Text="Add" />
             <asp:Button ID="btnRemove" runat="server" OnClick="btnRemove_Click" Text="Remover" />
+            <br />
+            <br />
+            <asp:Label ID="Label3" runat="server" Text="Contador da Aplicação: "></asp:Label>
+            <asp:TextBox ID="txtContadorApp" runat="server"></asp:TextBox>
+            <asp:Button ID="btnAddApp" runat="server" OnClick="btnAddApp_Click" Text="Add" />
+            <asp:Button ID="btnRemoverApp" runat="server" OnClick="btnRemoverApp_Click" Text="Remover" />
         </div>
     </form>
 </body>

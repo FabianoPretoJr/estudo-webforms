@@ -26,6 +26,11 @@ namespace ASPModulo2
                 txtSession.Text = Session.SessionID.ToString();
                 txtContador.Text = Session["contador"].ToString();
             }
+
+            if (Application["contador"] == null)
+                Application["contador"] = 0;
+            else
+                txtContadorApp.Text = Application["contador"].ToString();
         }
 
         protected void btnApagar_Click(object sender, EventArgs e)
@@ -57,6 +62,19 @@ namespace ASPModulo2
         {
             Session.Remove("contador");
             // dá pra usar tbm .RemoveAll ou .Abandon
+        }
+
+        protected void btnAddApp_Click(object sender, EventArgs e)
+        {
+            //o valor armazenado se mantem mudando mesmo mudando de navegador, diferente de coockie e session que se perdem
+            Application.Lock(); //trava o application até usuário x terminar a sua ação com ele, para então usuário y possa usar o application
+            Application["contador"] = Convert.ToInt32(Application["contador"]) + 1;
+            Application.UnLock(); //destrava o application para que demais usuários possam utilizá-lo
+        }
+
+        protected void btnRemoverApp_Click(object sender, EventArgs e)
+        {
+            Application.Remove("contador");
         }
     }
 }
