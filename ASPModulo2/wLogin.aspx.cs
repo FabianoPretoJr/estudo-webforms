@@ -28,13 +28,19 @@ namespace ASPModulo2
         }
 
         protected void btnLogar_Click(object sender, EventArgs e)
-        {
-            bool flag = false;
+        {           
             var res = Usuarios.Where(u => u == txtLogin.Text);
             if (res != null && txtSenha.Text == Senha)
             {
+                //coockie
                 Response.Cookies.Add(new HttpCookie("login", txtLogin.Text));
+                Response.Cookies["login"].Expires = DateTime.Now.AddMinutes(5);
                 Response.Cookies.Add(new HttpCookie("senha", txtSenha.Text));
+                Response.Cookies["senha"].Expires = DateTime.Now.AddMinutes(5);
+
+                //session
+                Session["login"] = txtLogin.Text;
+
                 Response.Redirect("wPrincipal.aspx");
             }
         }
